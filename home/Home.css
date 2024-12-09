@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --red:rgb(135, 4, 4);
+    --white: #f9f9f9;
+    --black:rgb(57, 47, 47);
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden; /* Avoid horizontal scroll */
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+    /*height: 100%;
+    background-color: #f9f9f9;
+    color: #333;*/
+}
+
+/* Navigation Bar */
+
+header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background-color: #f9f9f9;
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+}
+
+header .nav-logo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+header .nav-logo img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+header .navbar a{
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    color:var(--black);
+    margin: 0;
+}
+
+header .navbar a.active, 
+header .navbar a:hover{
+    color: white;
+    background: var(--red);
+}
+
+header .icons i,
+header .icons a{
+    cursor: pointer;
+    margin-left: .5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color: var(--black);
+    border-radius: 50%;
+    background: #eee;
+}
+
+header .icons i:hover,
+header .icons a:hover{
+    color: #ffffff;
+    background: var(--red);
+    transform: rotate(360deg);
+}
+
+header .icons #bars{
+    display: none;
+}
+
+/* Main Content */
+.home-container {
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1f1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgb(44, 38, 38);
+    width: 100%;
+}
+
+.content h1 {
+    font-size: 84px;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.content p {
+    font-size: 24px;
+    font-weight: 450;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.order-button {
+    padding: 10px 20px;
+    font-size: 0.8rem;
+    color: #ffffff;
+    background-color: #e42131;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+
+.order-button:hover {
+    background-color: #ff4e4e;
+    transform: scale(1.05);
+}
+
+/* Layout Teks dan Gambar */
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.text-content {
+    flex: 1;
+    padding-right: 20px;
+    text-align: left;
+}
+
+.image-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    transition: transform 0.3s;
+}
+
+.image-content:hover {
+    transform: scale(1.05);
+}
+
+.image-content img {
+    width: 500px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+.footer-container {
+    justify-content: center;
+    padding: 20px;
+    background-color: rgb(135, 4, 4);
+    color: white;
+}
+
+/*Logo untuk Footer dan Header (Disatukan)*/
+.footer-logo {
+    margin-bottom: 5px;
+    flex-basis: 100%; /* Ensure logo takes full width */
+}
+
+.footer-logo-img {
+    height: 70px; /* Adjust size as needed */
+    margin-right: 10px; /* Space between logo and text */
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.footer-column {
+    flex-basis: 30%;
+    padding: 10px;
+    text-align: left;
+    box-sizing: border-box; /* To include padding within the width */
+}
+
+.footer-column h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.footer-column a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+.footer-social-icons {
+    display: flex;
+    flex-direction: wrap;
+    background-color: rgb(135, 4, 4);
+    justify-content: center; /* Pusatkan ikon sosial */
+    gap: 20px; /* Beri jarak antar ikon */
+}
+
+.footer-social-icons a {
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+.footer-social-icons a:hover {
+    transform: scale(1.2); /* Perbesar ikon saat hover */
+}
+
+.footer-copyright {
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgb(135, 4, 4);
+    color: #ffcece;
+    font-size: 1.4rem;
+    width: 100%;
+}
+
+/* Responsive Layout Layar Kecil */
+@media (max-width: 991px) {
+    html{
+        font-size: 55%;
+    }
+
+    header{
+        padding: 1rem 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    header .icons #bars{
+        display: inline-block;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: #ffffff;
+        border-top: 1rem solid rgba(0, 0, 0, .2);
+        border-bottom: 1rem solid rgba(0, 0, 0, .2);
+        padding: 1rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 0);
+    }
+
+    header .navbar a{
+        display: block;
+        padding: 1.5rem;
+        margin: 1rem;
+        font-size: 2rem;
+        background: #eee;
+    }
+
+    .content-wrapper {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center-align contents */
+        justify-content: center;
+        padding: 50px;
+        text-align: center; /* Center-align text */
+    }
+
+    .text-content, .image-content {
+        margin-bottom: 20px; /* Spacing between sections */
+    }
+
+    .order-button {
+        margin-top: 20px; /* Spacing above the button */
+        padding: 10px 20px;
+        font-size: 0.8rem;
+        color: #ffffff;
+        background-color: #e63946;
+        border-radius: 25px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .order-button:hover {
+        background-color: #ff4e4e;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-column {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .footer-links {
+        display: block;
+        justify-content: center;
+        gap: 50px;
+        margin-top: 20px;
+    }
+
+    .footer-copyright {
+        width: 100%;
+    }
+}
+
+@media (max-width: 991px) {
+    html{
+        font-size: 50%;
+    }
+}
