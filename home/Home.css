@@ -24,18 +24,15 @@ html {
     overflow-x: hidden; /* Avoid horizontal scroll */
     scroll-padding-top: 5.5rem;
     scroll-behavior: smooth;
-    /*height: 100%;
-    background-color: #f9f9f9;
-    color: #333;*/
 }
 
-/* Navigation Bar */
+/* Navigation Bar 
 
 header {
     position: fixed;
     top: 0; left: 0; right: 0;
     background-color: #f9f9f9;
-    padding: 1rem 7%;
+    padding: 1rem 2%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -93,7 +90,7 @@ header .icons a:hover{
 
 header .icons #bars{
     display: none;
-}
+}*/
 
 /* Main Content */
 .home-container {
@@ -114,6 +111,7 @@ header .icons #bars{
     background-repeat: no-repeat;
     color: rgb(44, 38, 38);
     width: 100%;
+    /* margin-top: 60px; */
 }
 
 .content h1 {
@@ -131,7 +129,7 @@ header .icons #bars{
 
 .order-button {
     padding: 10px 20px;
-    font-size: 0.8rem;
+    font-size: 1.8rem;
     color: #ffffff;
     background-color: #e42131;
     border-radius: 25px;
@@ -252,8 +250,8 @@ header .icons #bars{
 .footer-copyright {
     text-align: center;
     padding: 10px 0;
-    background-color: rgb(135, 4, 4);
-    color: #ffcece;
+    background-color: #f1f1f1;
+    color: #b6b6b6;
     font-size: 1.4rem;
     width: 100%;
 }

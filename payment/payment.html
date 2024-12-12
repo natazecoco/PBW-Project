@@ -37,8 +37,12 @@
             e.preventDefault();
             const selectedMethod = document.querySelector('input[name="payment-method"]:checked').value;
             alert(`Thank you! You selected ${selectedMethod}. Your order has been placed.`);
+            
             // Optionally, redirect to an order confirmation page
-            window.location.href = '/menu/Menu.html';
+            window.location.href = '/home/Home.html';
+
+            sessionStorage.clear();
+            localStorage.clear();
         });
     </script>
 </body>
