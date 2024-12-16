@@ -4,7 +4,7 @@ document.querySelectorAll('.filter-buttons button').forEach((button, index) => {
         // Tentukan URL berdasarkan tombol yang diklik
         switch(index) {
             case 0:
-                window.location.href = 'Menu.html'; // Menuju halaman Pizza
+                window.location.href = 'Pizza.html'; // Menuju halaman Pizza
                 break;
             case 1:
                 window.location.href = 'Drink.html'; // Menuju halaman Drink
