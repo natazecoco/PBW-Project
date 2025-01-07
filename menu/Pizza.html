@@ -33,6 +33,7 @@
         <div class="icons">
             <i class="fas fa-bars" id ="bars"></i>
             <a href="#" class="fas fa-heart"></a>
+            <!-- <a href="/cart/cart.html" class="fas fa-shopping-cart" id="cart-icon"><span id="cart-count">0</span></a> -->
             <a href="/cart/cart.html" class="fas fa-shopping-cart"><span id="cart-count">0</span></a>
             </ul>
         </div>
@@ -44,9 +45,17 @@
             <button class="active" onclick="navigateToPage('Pizza.html')">Pizza</button>
             <button onclick="navigateToPage('Drink.html')">Drink</button>
             <button onclick="navigateToPage('Lasagna.html')">Lasagna</button>
-            <button onclick="navigateToPage('Dessert.html')">Dessert</button>
+            <button onclick="navigateToPage('Dessert.html')">Sides & Desserts</button>
         </div>
     </nav>
+
+    <!-- Cart Modal -->
+    <!-- <div id="cart-modal" class="hidden fixed inset-0 z-50 bg-black bg-opacity-50 flex justify-center items-center">
+        <div class="bg-white w-3/4 max-w-lg rounded-lg shadow-lg relative">
+            <button id="close-modal" class="absolute top-2 right-2 text-xl text-gray-700 hover:text-red-500">&times;</button>
+            <iframe src="/cart/cart.html" class="w-full h-96 rounded-lg"></iframe>
+        </div>
+    </div> -->
 
     <div class="menu-container">
         <!--main class="navbar-container">
@@ -67,110 +76,128 @@
                 <div class="pizza-item">
                     <img src="/Assets/Menu/Pizza/Beef Pepperoni.png" alt="Beef Pepperoni" class="rounded-md w-full sm:h-40 md:h-45 lg:h-64">
                     <h3>Beef Pepperoni</h3>
-                    <p>$12</p>
+                    <a>Saus Marinara, Beef Pepperoni, Keju Mozzarella</a>
+                    <p>Rp49,091</p>
+            
                     <div class="quantity-controls">
                         <button onclick="updateQuantity(this, -1)">-</button>
                         <span class="quantity">1</span>
                         <button onclick="updateQuantity(this, 1)">+</button>
                     </div>
-                    <button class="cart-button" onclick="addToCart('Beef Pepperoni', 12)">Add to Cart</button>
+                    <button class="cart-button" onclick="addToCart('Beef Pepperoni', 49091)">Add to Cart</button>
                 </div>
 
                 <div class="pizza-item">
                     <img src="/Assets/Menu/Pizza/cheese_mania.png" alt="Cheese Mania"
                     class="rounded-md w-full sm:h-40 md:h-45 lg:h-64">
                     <h3>Cheese Mania</h3>
-                    <p>$14</p>
+                    <a>Saus Marinara, Parsley, Extra Keju Mozzarella</a>
+                    <p>Rp58,182</p>
+                    
                     <div class="quantity-controls">
                         <button onclick="updateQuantity(this, -1)">-</button>
                         <span class="quantity">1</span>
                         <button onclick="updateQuantity(this, 1)">+</button>
                     </div>
-                    <button class="cart-button" onclick="addToCart('Cheese Mania', 14)">Add to Cart</button>
+                    <button class="cart-button" onclick="addToCart('Cheese Mania', 58182)">Add to Cart</button>
                 </div>
 
                 <div class="pizza-item">
                     <img src="/Assets/Menu/Pizza/Chicken Pepperoni.png" alt="Chicken Pepperoni" class="rounded-md w-full sm:h-40 md:h-45 lg:h-64">
                     <h3>Chicken Pepperoni</h3>
-                    <p>$11</p>
+                    <a>Saus Marinara, Chicken Pepperoni, Keju Mozzarella</a>
+                    <p>Rp49,091</p>
+                    
                     <div class="quantity-controls">
                         <button onclick="updateQuantity(this, -1)">-</button>
                         <span class="quantity">1</span>
                         <button onclick="updateQuantity(this, 1)">+</button>
                     </div>
-                    <button class="cart-button" onclick="addToCart('Chicken Pepperoni', 11)">Add to Cart</button>
+                    <button class="cart-button" onclick="addToCart('Chicken Pepperoni', 49091)">Add to Cart</button>
                 </div>
 
                 <div class="pizza-item">
                     <img src="/Assets/Menu/Pizza/Meatball.png" alt="Meatball"class="rounded-md w-full sm:h-40 md:h-45 lg:h-64">
                     <h3>Meatball</h3>
-                    <p>$13</p>
+                    <a>Saus BBQ, Saus Keju, Bawang Bombai Merah, Bakso, Parsley, Jamur Champignon, Keju Mozzarella</a>
+                    <p>Rp58,182</p>
+                    
                     <div class="quantity-controls">
                         <button onclick="updateQuantity(this, -1)">-</button>
                         <span class="quantity">1</span>
                         <button onclick="updateQuantity(this, 1)">+</button>
                     </div>
-                    <button class="cart-button" onclick="addToCart('Meatball', 13)">Add to Cart</button>
+                    <button class="cart-button" onclick="addToCart('Meatball', 58182)">Add to Cart</button>
                 </div>
 
                 <div class="pizza-item">
                     <img src="/Assets/Menu/Pizza/Grilled Beef Supreme.png" alt="Grilled Beef Supreme"class="rounded-md w-full sm:h-40 md:h-45 lg:h-64">
                     <h3>Grilled Beef Supreme</h3>
-                    <p>$10</p>
+                    <a>Saus BBQ, Saus Keju, Bawang Bombai Merah, Beef Burger, Jalapeno, Keju Mozzarella</a>
+                    <p>Rp79,091</p>
+                    
                     <div class="quantity-controls">
                         <button onclick="updateQuantity(this, -1)">-</button>
                         <span class="quantity">1</span>
                         <button onclick="updateQuantity(this, 1)">+</button>
                     </div>
-                    <button class="cart-button" onclick="addToCart('Grilled Beef Supreme', 10)">Add to Cart</button>
+                    <button class="cart-button" onclick="addToCart('Grilled Beef Supreme', 79091)">Add to Cart</button>
                 </div>
 
                 <div class="pizza-item">
                     <img src="/Assets/Menu/Pizza/Margherita.png" alt="Margherita"class="rounded-md w-full sm:h-40 md:h-45 lg:h-64">
                     <h3>Margherita</h3>
-                    <p>$15</p>
+                    <a>Saus Marinara, Potongan Tomat, Parsley, Keju Mozzarella</a>
+                    <p>Rp49,091</p>
+                    
                     <div class="quantity-controls">
                         <button onclick="updateQuantity(this, -1)">-</button>
                         <span class="quantity">1</span>
                         <button onclick="updateQuantity(this, 1)">+</button>
                     </div>
-                    <button class="cart-button" onclick="addToCart('Margherita', 15)">Add to Cart</button>
+                    <button class="cart-button" onclick="addToCart('Margherita', 49091)">Add to Cart</button>
                 </div>
 
                 <div class="pizza-item">
-                    <img src="/Assets/Menu/Pizza/Tuna Delight.png" alt="Tuna Delight pizza"class="rounded-md w-full sm:h-40 md:h-45 lg:h-64">
+                    <img src="/Assets/Menu/Pizza/Tuna Delight.png" alt="Tuna Delight"class="rounded-md w-full sm:h-40 md:h-45 lg:h-64">
                     <h3>Tuna Delight</h3>
-                    <p>$18</p>
+                    <a>Hot Spicy Tuna, Mayones, Bawang Bombai Merah, Paprika Merah, Parsley, Keju Mozzarella</a>
+                    <p>Rp58,182</p>
+                    
                     <div class="quantity-controls">
                         <button onclick="updateQuantity(this, -1)">-</button>
                         <span class="quantity">1</span>
                         <button onclick="updateQuantity(this, 1)">+</button>
                     </div>
-                    <button class="cart-button" onclick="addToCart('Tuna Delight', 18)">Add to Cart</button>
+                    <button class="cart-button" onclick="addToCart('Tuna Delight', 58182)">Add to Cart</button>
                 </div>
 
                 <div class="pizza-item">
                     <img src="/Assets/Menu/Pizza/veggie_mania.png" alt="Vegetarian" class="rounded-md w-full sm:h-40 md:h-45 lg:h-64">
                     <h3>Vegetarian</h3>
-                    <p>$12</p>
+                    <a>Saus Marinara, Paprika Hijau, Jagung, Jamur, Tomat, Zaitun Hitam</a>
+                    <p>Rp58,182</p>
+                    
                     <div class="quantity-controls">
                         <button onclick="updateQuantity(this, -1)">-</button>
                         <span class="quantity">1</span>
                         <button onclick="updateQuantity(this, 1)">+</button>
                     </div>
-                    <button class="cart-button" onclick="addToCart('Vegetarian', 12)">Add to Cart</button>
+                    <button class="cart-button" onclick="addToCart('Vegetarian', 58182)">Add to Cart</button>
                 </div>
 
                 <div class="pizza-item">
                     <img src="/Assets/Menu/Pizza/extravaganzza.png" alt="Supreme" class="rounded-md w-full sm:h-40 md:h-45 lg:h-64">
                     <h3>Supreme</h3>
-                    <p>$16</p>
+                    <a>Saus Marinara, Paprika Hijau, Bawang Bombai Merah, Zaitun Hitam, Jamur, Beef Pepperoni</a>
+                    <p>Rp79,091</p>
+                    
                     <div class="quantity-controls">
-                        <button onclick="updateQuantity(this, -1)">-</button>
+                        <button class="min" onclick="updateQuantity(this, -1)">-</button>
                         <span class="quantity">1</span>
                         <button onclick="updateQuantity(this, 1)">+</button>
                     </div>
-                    <button class="cart-button" onclick="addToCart('Supreme', 16)">Add to Cart</button>
+                    <button class="cart-button" onclick="addToCart('Supreme', 79091)">Add to Cart</button>
                 </div>
                 
             </section>

@@ -44,7 +44,7 @@
             <button onclick="navigateToPage('Pizza.html')">Pizza</button>
             <button onclick="navigateToPage('Drink.html')">Drink</button>
             <button onclick="navigateToPage('Lasagna.html')">Lasagna</button>
-            <button class="active" onclick="navigateToPage('Dessert.html')">Dessert</button>
+            <button class="active" onclick="navigateToPage('Dessert.html')">Sides & Desserts</button>
         </div>
     </nav>
 
@@ -53,52 +53,108 @@
         <main class="menu-content ">
             <section class="pizza-menu">
                 <div class="pizza-item">
-                    <img src="/assets/menu/Dessert/puding.jpg" alt="Panna Cotta" class="rounded-md w-full sm:h-40 md:h-45 lg:h-64">
-                    <h3>Vanilla Panna Cotta</h3>
-                    <p>$5</p>
+                    <img src="/assets/menu/Dessert/Cheesy Roll.png" alt="Cheesy Roll" class="rounded-md w-full sm:h-40 md:h-45 lg:h-64">
+                    <h3>Cheesy Roll</h3>
+                    <a>5pcs Cheesy Roll</a>
+                    <p>Rp18,181</p>
                     <div class="quantity-controls">
                         <button onclick="updateQuantity(this, -1)">-</button>
                         <span class="quantity">1</span>
                         <button onclick="updateQuantity(this, 1)">+</button>
                     </div>
-                    <button class="cart-button" onclick="addToCart('Vanilla Panna Cotta', 5)">Add to Cart</button>
+                    <button class="cart-button" onclick="addToCart('Cheesy Roll', 18181)">Add to Cart</button>
                 </div>
 
                 <div class="pizza-item">
-                    <img src="/assets/menu/Dessert/cake crumble.jpg" alt="RollCake Crumble"
+                    <img src="/assets/menu/Dessert/Potato Wedges.png" alt="Potato Wedges" class="rounded-md w-full sm:h-40 md:h-45 lg:h-64">
+                    <h3>Potato Wedges</h3>
+                    <a>7pcs Potato Wedges</a>
+                    <p>Rp22,727</p>
+                    <div class="quantity-controls">
+                        <button onclick="updateQuantity(this, -1)">-</button>
+                        <span class="quantity">1</span>
+                        <button onclick="updateQuantity(this, 1)">+</button>
+                    </div>
+                    <button class="cart-button" onclick="addToCart('Potato Wedges', 22727)">Add to Cart</button>
+                </div>
+
+                <div class="pizza-item">
+                    <img src="/assets/menu/Dessert/Garlic Bread.png" alt="Garlic Bread" class="rounded-md w-full sm:h-40 md:h-45 lg:h-64">
+                    <h3>Garlic Bread</h3>
+                    <a>5pcs Garlic Bread</a>
+                    <p>Rp22,727</p>
+                    <div class="quantity-controls">
+                        <button onclick="updateQuantity(this, -1)">-</button>
+                        <span class="quantity">1</span>
+                        <button onclick="updateQuantity(this, 1)">+</button>
+                    </div>
+                    <button class="cart-button" onclick="addToCart('Garlic Bread', 22727)">Add to Cart</button>
+                </div>
+
+                <div class="pizza-item">
+                    <img src="/assets/menu/Dessert/Choco Puff.png" alt="Choco Puff" class="rounded-md w-full sm:h-40 md:h-45 lg:h-64">
+                    <h3>Choco Puff</h3>
+                    <a>5pcs Choco Puff</a>
+                    <p>Rp21,818</p>
+                    <div class="quantity-controls">
+                        <button onclick="updateQuantity(this, -1)">-</button>
+                        <span class="quantity">1</span>
+                        <button onclick="updateQuantity(this, 1)">+</button>
+                    </div>
+                    <button class="cart-button" onclick="addToCart('Choco Puff', 21818)">Add to Cart</button>
+                </div>
+
+                <div class="pizza-item">
+                    <img src="/assets/menu/Dessert/Berrys Parfait.jpg" alt="Berrys Parfait" class="rounded-md w-full sm:h-40 md:h-45 lg:h-64">
+                    <h3>Berrys Parfait</h3>
+                    Yogurt, Granola, Potongan Stroberi, Potongan Blueberry, Potongan Raspberry, Madu.
+                    <p>Rp22,727</p>
+                    <div class="quantity-controls">
+                        <button onclick="updateQuantity(this, -1)">-</button>
+                        <span class="quantity">1</span>
+                        <button onclick="updateQuantity(this, 1)">+</button>
+                    </div>
+                    <button class="cart-button" onclick="addToCart('Berrys Parfait', 22727)">Add to Cart</button>
+                </div>
+
+                <div class="pizza-item">
+                    <img src="/assets/menu/Dessert/Choco Bread Sticks.png" alt="Choco Bread Sticks"
                     class="rounded-md w-full sm:h-40 md:h-45 lg:h-64">
-                    <h3>RollCake Crumble</h3>
-                    <p>$8</p>
+                    <h3>Choco Bread Sticks</h3>
+                    <a>5pcs Choco Bread Sticks</a>
+                    <p>Rp13,636</p>
                     <div class="quantity-controls">
                         <button onclick="updateQuantity(this, -1)">-</button>
                         <span class="quantity">1</span>
                         <button onclick="updateQuantity(this, 1)">+</button>
                     </div>
-                    <button class="cart-button" onclick="addToCart('RollCake Crumble', 8)">Add to Cart</button>
+                    <button class="cart-button" onclick="addToCart('Choco Bread Sticks', 13636)">Add to Cart</button>
                 </div>
 
                 <div class="pizza-item">
-                    <img src="/assets/menu/Dessert/chocolatte tiramisu.jpeg" alt="Chocolatte Tiramisu" class="rounded-md w-full sm:h-40 md:h-45 lg:h-64">
-                    <h3>Chocolatte Tiramisu</h3>
-                    <p>$10</p>
+                    <img src="/assets/menu/Dessert/Tiramisu.jpg" alt="Tiramisu" class="rounded-md w-full sm:h-40 md:h-45 lg:h-64">
+                    <h3>Tiramisu</h3>
+                    <a>Ladyfinger, Keju Mascarpone, Espresso, Bubuk Kakao, Ekstrak Vanilla, Heavy Cream</a>
+                    <p>Rp21,818</p>
                     <div class="quantity-controls">
                         <button onclick="updateQuantity(this, -1)">-</button>
                         <span class="quantity">1</span>
                         <button onclick="updateQuantity(this, 1)">+</button>
                     </div>
-                    <button class="cart-button" onclick="addToCart('Chocolatte Tiramisu', 10)">Add to Cart</button>
+                    <button class="cart-button" onclick="addToCart('Tiramisu', 21818)">Add to Cart</button>
                 </div>
 
                 <div class="pizza-item">
-                    <img src="/assets/menu/Dessert/ice cream.jpeg" alt="Ice Cream"class="rounded-md w-full sm:h-40 md:h-45 lg:h-64">
-                    <h3>Ice Cream</h3>
-                    <p>$5</p>
+                    <img src="/assets/menu/Dessert/Chocolate Lava.png" alt="Choco Lava"class="rounded-md w-full sm:h-40 md:h-45 lg:h-64">
+                    <h3>Choco Lava</h3>
+                    <a>Cake, Cokelat Hitam, Mentega, Icing Sugar</a>
+                    <p>Rp16,363</p>
                     <div class="quantity-controls">
                         <button onclick="updateQuantity(this, -1)">-</button>
                         <span class="quantity">1</span>
                         <button onclick="updateQuantity(this, 1)">+</button>
                     </div>
-                    <button class="cart-button" onclick="addToCart('Ice Cream', 5)">Add to Cart</button>
+                    <button class="cart-button" onclick="addToCart('Choco Lava', 16363)">Add to Cart</button>
                 </div>
                 
             </section>

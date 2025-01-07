@@ -19,6 +19,30 @@ document.querySelectorAll('.filter-buttons button').forEach((button, index) => {
     });
 });
 
+/* document.addEventListener('DOMContentLoaded', () => {
+    const cartIcon = document.getElementById('cart-icon');
+    const cartModal = document.getElementById('cart-modal');
+    const closeModal = document.getElementById('close-modal');
+
+    // Open the modal
+    cartIcon.addEventListener('click', (event) => {
+        event.preventDefault(); // Prevent navigation
+        cartModal.classList.add('active');
+    });
+
+    // Close the modal
+    closeModal.addEventListener('click', () => {
+        cartModal.classList.remove('active');
+    });
+
+    // Close the modal when clicking outside the modal content
+    cartModal.addEventListener('click', (event) => {
+        if (event.target === cartModal) {
+            cartModal.classList.remove('active');
+        }
+    });
+}); */
+
 //hide angka 0
 // Array untuk menyimpan item di cart
 let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];

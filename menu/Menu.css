@@ -36,6 +36,7 @@ header {
     justify-content: space-between;
     z-index: 1000;
     box-shadow: var(--box-shadow);
+    font-weight: bold;
 }
 
 header .nav-logo {
@@ -99,7 +100,8 @@ header .icons #bars{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    z-index: 1000;
+    z-index: 500;
+    font-weight: bold;
 }
 
 .filter-buttons button {
@@ -122,6 +124,7 @@ header .icons #bars{
     flex: 1;
     padding: 20px;
     justify-content: space-between;
+    font-weight: bold;
 }
 
 
@@ -148,30 +151,67 @@ header .icons #bars{
 
 .pizza-item img {
     max-width: 100%;
+    max-height: 50%;
     border-radius: 10px;
 }
 
 .pizza-item h3 {
     margin: 10px 0;
-    font-size: 20px;
+    font-size: 18px;
+}
+
+.pizza-item a{
+    font-weight: lighter;
+    font-size: 14px;
 }
 
 .pizza-item p {
-    color: #b83b3b;
+    color: rgb(135, 4, 4);
     font-size: 18px;
-    margin-bottom: 10px;
+    margin: 10px;
+}
+
+.quantity-controls{
+    margin: 5px;
+}
+
+.quantity-controls button{
+    margin: 10px;
+    background-color: rgb(135, 4, 4);
+    color: #fff;
+    border: none;
+    padding: 1px 8px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+}
+
+.quantity-controls button:hover {
+    background-color: #b83b3b;
 }
 
 .cart-button {
-    background-color: #b83b3b;
+    background-color: rgb(135, 4, 4);
     color: #fff;
     border: none;
     padding: 10px 15px;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 .cart-button:hover {
-    background-color: #ff6347;
+    background-color: #b83b3b;
 }
+
+/* .hidden {
+    display: none;
+}
+
+#cart-modal {
+    display: none;
+}
+
+#cart-modal.active {
+    display: flex;
+} */

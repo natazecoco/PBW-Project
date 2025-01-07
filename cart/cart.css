@@ -1,13 +1,11 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
     color: #333;
 }
 
 .navbar-container {
-    background-color: #b83b3b;
+    background-color:rgb(135, 4, 4);
     padding: 15px;
     display: flex;
     justify-content: space-between;
@@ -15,23 +13,34 @@ body {
     color: white;
 }
 
-.navbar-container h2 {
-    margin: 0;
-}
-
-.navbar-container span {
-    color: #ffe135;
-}
-
-.navbar-container ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.nav-logo {
     display: flex;
-    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    font-size: 1.0625rem;
+    font-weight: bold;
 }
 
-.navbar-container ul li {
+.nav-logo img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+header .navbar a{
+    font-weight: bold;
+    font-size: 1.0625rem;
+    border-radius: .5rem;
+    padding: .3125rem .9375rem;
+    color:var(--black);
+    margin: 0;
+}
+header .navbar a:hover {
+    color: #b83b3b;
+    background: var(--white);
+}
+
+/* .navbar-container ul li {
     display: inline;
 }
 
@@ -42,10 +51,12 @@ body {
 
 .navbar-container ul li a:hover {
     text-decoration: underline;
-}
+    color: white;
+    background: var(--red);
+} */
 
 .cart-container {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 30px auto;
     background: white;
     padding: 20px;
@@ -54,10 +65,11 @@ body {
 }
 
 .cart-content h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 18px;
+    margin: 20px;
     text-align: center;
-    color: #b83b3b;
+    color: rgb(135, 4, 4);
+    font-weight: bold;
 }
 
 #cart-items {
@@ -72,6 +84,9 @@ body {
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #total-price {
@@ -83,24 +98,30 @@ body {
 }
 
 button {
-    background-color: #b83b3b;
+    background-color: rgb(135, 4, 4);
     color: white;
     border: none;
     padding: 10px 15px;
     cursor: pointer;
     border-radius: 4px;
-}
-
-button:hover {
-    background-color: #e63900;
+    margin-left: 20px;
 }
 
 .order-button {
+    margin: 0px;
+}
+
+button:hover {
     background-color: #b83b3b;
+}
+
+.order-button {
+    background-color: rgb(135, 4, 4);
     color: white;
     border: none;
     padding: 15px 20px;
     font-size: 16px;
+    font-weight: bold;
     cursor: pointer;
     border-radius: 5px;
     margin-top: 20px;
@@ -109,5 +130,5 @@ button:hover {
 }
 
 .order-button:hover {
-    background-color: #e63900;
+    background-color: #b83b3b;
 }
