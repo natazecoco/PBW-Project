@@ -67,8 +67,7 @@ let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
         } else {
             cartItems.push({ name: pizzaName, price: price, quantity: quantity });
         }
-
-        alert(`Added ${quantity} ${pizzaName}(s) to the cart!`);
+        
         localStorage.setItem('cartItems', JSON.stringify(cartItems)); // Simpan ke localStorage
         updateCartCount();
     }
